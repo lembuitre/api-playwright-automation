@@ -17,3 +17,4 @@ Steps to setup the test repository into your computer:
 10. Invoke 'npm install -D @playwright/test' command
 11. Invoke the command 'npx playwright test' in the terminal to run the test scripts. Or you can do 'npx playwright test --ui' to run the playwright test in UI
     Note: number 11 commands will work if the installions from steps 7 to 10 are properly invoked.
+12. Invoke the 'npx playwright show-report' in the terminal to see the html report of the test run. 
