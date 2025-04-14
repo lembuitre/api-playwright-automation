@@ -1,0 +1,23 @@
+{
+  "name": "api-playwright-automation",
+  "version": "1.0.0",
+  "description": "Prerequisites:\r 1. Should have git bash in your computer. You can get it here: https://git-scm.com/downloads\r 2. Setup for at least the SSH in your computer to clone the repository. If not, you can check this out: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lembuitre/api-playwright-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lembuitre/api-playwright-automation/issues"
+  },
+  "homepage": "https://github.com/lembuitre/api-playwright-automation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.1"
+  }
+}
