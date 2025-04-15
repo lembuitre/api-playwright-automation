@@ -8,20 +8,20 @@ test('API Test Assurity', async({request}) => {
     
     const text = await response.text();
     
-    //Name = "Carbon credits"
+    //To check if Name = Carbon credits
     expect(text).toContain('"Name":"Carbon credits"');
     
-    //CanRelist = true
+    //To check if CanRelist = true
     expect(text).toContain('"CanRelist":true')
 
     //The Promotions element with Name = "Gallery" has a Description that contains the text "Good position in category
-     
+    
      //To check if the 'Promotions' array exists and has contents
     const regex = /"Promotions"\s*:\s*\[([\s\S]*?)\]/;
     const promotionsCheck = text.match(regex);
     expect(promotionsCheck).not.toBeNull();
 
-    //This part is to check if Name = "Gallery" has a Description that contains the text "Good position in category
+    //To check if Name = "Gallery" has a Description that contains the text "Good position in category
     expect(text).toContain('"Name":"Gallery"');
     expect(text).toContain('"Description":"Good position in category"');
 
