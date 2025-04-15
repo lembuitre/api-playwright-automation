@@ -4,6 +4,7 @@ test('API Test Assurity', async({request}) => {
     
     const response = await request.get('https://api.tmsandbox.co.nz/v1/Categories/6327/Details.json?catalogue=false');
 
+    //To check if the status code is 200
     expect(response.status()).toBe(200);
     
     const text = await response.text();
